@@ -29,12 +29,12 @@ export default function About() {
           </p>
         </div>
 
-        {/* Stats Grid */}
+        {/* Stats Grid - Równe wysokości */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {HOTEL_DATA.stats.map((stat, idx) => (
             <div 
               key={idx}
-              className="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm text-center transform transition hover:-translate-y-1 hover:shadow-md"
+              className="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm text-center transform transition hover:-translate-y-1 hover:shadow-md flex flex-col justify-center h-full"
             >
               <div className="font-serif text-2xl sm:text-3xl font-bold text-pine-800 mb-1">
                 {stat.value}
@@ -49,22 +49,24 @@ export default function About() {
           ))}
         </div>
 
-        {/* Benefits Cards Grid */}
+        {/* Benefits Cards Grid - Wymuszona równa wysokość h-full */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {HOTEL_DATA.benefits.map((benefit, idx) => {
             const IconComponent = iconMap[benefit.icon] || Home;
             return (
               <div 
                 key={idx}
-                className="bg-white rounded-2xl p-8 border border-stone-200/80 shadow-sm hover:shadow-md transition-all group"
+                className="bg-white rounded-2xl p-8 border border-stone-200/80 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between h-full"
               >
-                <div className="w-12 h-12 rounded-xl bg-pine-100 text-pine-800 flex items-center justify-center mb-6 group-hover:bg-pine-700 group-hover:text-white transition-colors">
-                  <IconComponent className="w-6 h-6" />
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-pine-100 text-pine-800 flex items-center justify-center mb-6 group-hover:bg-pine-700 group-hover:text-white transition-colors">
+                    <IconComponent className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-stone-900 mb-3">
+                    {benefit.title}
+                  </h3>
                 </div>
-                <h3 className="font-serif text-xl font-bold text-stone-900 mb-3">
-                  {benefit.title}
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
+                <p className="text-stone-600 text-sm leading-relaxed mt-2">
                   {benefit.description}
                 </p>
               </div>
@@ -74,7 +76,7 @@ export default function About() {
 
         {/* Highlight callout for Pets 0 zł */}
         <div className="mt-16 bg-gradient-to-r from-pine-900 to-pine-800 text-white rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl text-left">
             <div className="inline-flex items-center gap-2 bg-amber-500 text-stone-950 font-bold px-3 py-1 rounded-full text-xs mb-4">
               <Award className="w-4 h-4" />
               Wyróżnik na tle innych hoteli
