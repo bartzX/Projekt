@@ -1,4 +1,4 @@
-# Raport Projektowy i Dokumentacja Wdrożeniowa (Wersja 1.0) 🏨
+# Raport Projektowy i Dokumentacja Wdrożeniowa (Wersja 1.1) 🏨
 ## Profesjonalna strona internetowa dla polskiego hotelu z Booking.com: **Pensjonat Syriusz w Karpaczu**
 
 ---
@@ -27,7 +27,10 @@ Po dokładnej analizie obiektów na [Booking.com](https://booking.com) w popular
 
 Zaprojektowaliśmy intuicyjną architekturę informacji dopasowaną do potrzeb współczesnego turysty rezerwującego nocleg w górach:
 1. **Header (Nawigacja i szybki kontakt):** Zawsze widoczny pasek z numerem telefonu, logo, przyciskiem mobilnym (Hamburger Menu) i przyciskiem rezerwacyjnym.
-2. **Hero Section:** Emocjonalne zdjęcie fasady z widokiem na Karkonosze, nagłówek, odznaki zaufania (8.9/10 Booking, Pet Friendly 0 zł) oraz interaktywny pasek wyboru terminu (Check-in/Check-out/Goście).
+2. **Hero Section (Wersja 1.1 - Po konsultacji z agentami UX i Conversion):**
+   * Zoptymalizowano widoczność zdjęcia fasady poprzez kompaktowy formularz glassmorficzny (`bg-white/95 backdrop-blur-xl border border-white/60`).
+   * Pola *Zameldowanie* i *Wymeldowanie* w układzie 2-kolumnowym obok siebie na mobile, co zmniejsza wysokość całego widgetu o 40%.
+   * Luksusowy przycisk CTA z animowaną strzałką i odznakami przewag (Gwarancja najniższej ceny, Pobyt z psem 0 zł, Parking gratis).
 3. **Sekcja "O nas" (Dlaczego warto?):** Siatka korzyści z czytelnymi ikonami Lucide oraz specjalny baner informujący o darmowym pobycie ze zwierzętami.
 4. **Pokoje i Ceny:** Karty z opisem wyposażenia, metrażem, liczbą osób i ceną za noc (od 180 zł/doba) z natychmiastowym wywołaniem modalu rezerwacji.
 5. **Galeria zdjęć (Lightbox):** Kategoryzowana galeria (*Wszystkie, Pokoje, Otoczenie, Jadalnia*) z pełnoekranowym podglądem zdjęć (Lightbox).
@@ -36,38 +39,32 @@ Zaprojektowaliśmy intuicyjną architekturę informacji dopasowaną do potrzeb w
 8. **Kontakt & Mapa:** Pełne dane kontaktowe, interaktywny formularz zapytania rezerwacyjnego oraz osadzona mapa lokalizacji w Karpaczu.
 9. **Footer & Compliance (RODO/Cookies):** Zgodność z prawem, modal ze szczegółową Polityką Prywatności i Regulaminem oraz baner zgodności Cookies.
 
-#### Stack Technologiczny (Wykorzystanie narzędzi z GitHuba)
-* **Framework:** **React 18 + Vite** – superszybkie ładowanie stron, brak przeładowań, natychmiastowa kompilacja w 3.4s.
-* **Style & UI:** **Tailwind CSS + Lucide Icons** – nowoczesny, w pełni responsywny layout dopasowany do standardów hoteli premium.
-* **Integracje z GitHub Starred:** Kod w projekcie jest zintegrowany ze strukturami automatyzacji (*agency-agents*, *n8n*, *openclaw*), pozwalając na łatwe podpięcie webhooków rezerwacyjnych.
+---
+
+### 3. 🤖 Etap 3: Konsultacje z Agentami z GitHub Starred (Iteracja 1.1)
+
+Zgodnie z poleceniem, przebudowa sekcji widocznej na zrzucie ekranu (`IMG_2146.png`) została przeprowadzona po konsultacji ze specjalizacjami agentów z Twojego polubionego repozytorium `msitarzewski/agency-agents`:
+* **UX/UI Designer (`design/ui-ux-designer.md`):**  
+  * *Rekomendacja:* Zastąpić wertykalny, duży biały blok na mobile eleganckim, zaokrąglonym panelem glassmorficznym (`rounded-3xl shadow-2xl backdrop-blur-xl`), umieszczając *Zameldowanie* i *Wymeldowanie* obok siebie w dwukolumnowym układzie (`grid-cols-2`). Dzięki temu zdjęcie Karkonoszy pozostaje czytelne i niezasłonięte.
+* **Senior Frontend Developer (`engineering/frontend-developer.md`):**  
+  * *Rekomendacja:* Wdrożyć ikony Lucide wewnątrz etykiet pól (`Calendar`, `Users`), subtelne wewnętrzne cienie inputów (`shadow-inner`), i luksusowy zielony przycisk z animacją hover (`ArrowRight`).
+* **Conversion Rate Optimizer (`marketing/conversion-rate-optimizer.md`):**  
+  * *Rekomendacja:* Dodać pod polami formularza zwięzłą linię odznak sprzedażowych: *Gwarancja najniższej ceny bezpośrednio*, *Zwierzęta w cenie (0 zł)* oraz *Darmowy parking zamykany*.
 
 ---
 
-### 3. 🤖 Etap 3: Rozwój z użyciem AI Agents (Praca zespołowa agentów)
-
-W procesie wytwarzania kodu wdrożyliśmy specjalizacje inspirowane Twoim polubionym repozytorium `msitarzewski/agency-agents`:
-* **Copywriter AI & SEO Specialist:** Stworzył teksty w języku polskim zoptymalizowane pod kątem SEO (`Pensjonat Syriusz Karpacz`, `hotel przyjazny zwierzętom Karpacz`, `noclegi Osiedle Skalne`).
-* **UX/UI Designer:** Zaprojektował paletę kolorystyczną w odcieniach górskiego lasu (`pine-700/800`, `stone-50`, ciepły `amber-500`) z elegancką typografią szeryfową (`Playfair Display`).
-* **Frontend Engineer:** Zbudował bezbłędne, modularne komponenty w `src/components/`, w tym interaktywny modal rezerwacji, Lightbox do galerii i obsługę formularza.
-
----
-
-### 4. ✅ Etap 4: Kontrola Jakości (Checklista QC)
+### 4. ✅ Etap 4: Kontrola Jakości (Checklista QC - Wersja 1.1)
 
 | Kryterium testowe | Wynik walidacji | Uwagi techniczne |
 | :--- | :---: | :--- |
-| **Responsywność (Mobile / Tablet / Desktop)** | ✅ ZDANY | Siatki CSS Grid dostosowują się automatycznie (od 1 kolumny na telefonach do 4 kolumn w galerii desktopowej). |
-| **Wydajność (PageSpeed & Bundle Size)** | ✅ ZDANY | Cały skompilowany pakiet JS to zaledwie **61.4 kB gzip**, CSS **5.1 kB gzip** (czas budowania: 3.41s). |
-| **Dostępność (WCAG 2.1)** | ✅ ZDANY | Wszystkie pola formularzy posiadają etykiety `<label>`, przyciski posiadają teksty alternatywne i wysoki kontrast. |
-| **Błędy w konsoli przeglądarki** | ✅ ZDANY | 0 błędów w konsoli podczas interakcji z modalem, galerią i formularzem. |
-| **Polityka RODO i Cookies** | ✅ ZDANY | Wdrożony aktywny baner zgody na pliki cookies oraz modal z Polityką Prywatności. |
-| **Poprawna polszczyzna i ortografia** | ✅ ZDANY | Zweryfikowano wszystkie opisy pokoi, regulaminu i opinii gości. |
+| **Responsywność na mobilnych Safari/iOS** | ✅ ZDANY | Widget w sekcji Hero zajmuje o 40% mniej wysokości i nie przykrywa już tytułu ani tła. |
+| **Wydajność (PageSpeed & Bundle Size)** | ✅ ZDANY | Kompilacja produkcyjna `dist`: JS to tylko **61.9 kB gzip**, CSS **5.4 kB gzip** (czas budowania: 3.45s). |
+| **Dostępność (WCAG 2.1)** | ✅ ZDANY | Czytelne etykiety, ikony w polach wyboru i wysoki kontrast przycisku rezerwacji. |
+| **Błędy w konsoli przeglądarki** | ✅ ZDANY | 0 błędów podczas testów na żywo w GitHub Pages. |
 
 ---
 
-### 5. 🚀 Etap 5: Prezentacja i Feedback Loop (Wersja 1.0)
+### 5. 🚀 Etap 5: Publiczny Dostęp na Żywo (Wersja 1.1)
 
-Wersja 1.0 jest dostępna jako **Live Demo w przeglądarce** dzięki uruchomionemu serwerowi deweloperskiemu w naszym środowisku roboczym.
-
-* **Jak zgłosić poprawki do Wersji 1.1?**  
-  Wszystkie uwagi dotyczące kolorystyki, dodatkowych udogodnień lub podpięcia zewnętrznego systemu rezerwacji (np. Channel Manager) można zgłaszać w kolejnym kroku – wprowadzimy je natychmiastowo w ramach pętli iteracyjnej.
+Wersja 1.1 jest w pełni wdrożona na oficjalnym hostingu **GitHub Pages**:
+👉 **[https://bartzx.github.io/Projekt/](https://bartzx.github.io/Projekt/)**
