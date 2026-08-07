@@ -21,8 +21,8 @@ export default function Hero({ onOpenBooking }) {
       {/* Background Image with Richer Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="./images/hero_mountain.jpg" 
-          alt="Pensjonat Syriusz w Karpaczu - widok na Karkonosze" 
+          src="./images/hero_mountain.jpg" fetchPriority="high" decoding="async" 
+          alt="Pensjonat Grań w Karpaczu - widok na Karkonosze" 
           className="w-full h-full object-cover object-center transform scale-105 animate-pulse-slow"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/45 to-stone-900/95" />

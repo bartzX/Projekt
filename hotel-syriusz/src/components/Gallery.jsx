@@ -43,7 +43,7 @@ export default function Gallery() {
             Nasza Galeria
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl font-bold mt-4 mb-6">
-            Zobacz Pensjonat Syriusz z bliska
+            Zobacz Pensjonat Grań z bliska
           </h2>
           <p className="text-stone-600 text-base sm:text-lg">
             Zapoznaj się ze zdjęciami naszych wnętrz, pokoi, jadalni z kominkiem oraz malowniczego otoczenia Osiedla Skalnego w Karpaczu.
@@ -75,7 +75,7 @@ export default function Gallery() {
               onClick={() => openLightbox(idx)}
               className="relative group rounded-2xl overflow-hidden cursor-pointer bg-stone-200 shadow-sm hover:shadow-xl transition-all h-64"
             >
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={photo.url} 
                 alt={photo.caption} 
                 className="w-full h-full object-cover transform transition duration-500 group-hover:scale-105"
@@ -120,7 +120,7 @@ export default function Gallery() {
 
           {/* Main image */}
           <div className="max-w-4xl max-h-[80vh] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
-            <img 
+            <img loading="lazy" decoding="async" 
               src={filteredPhotos[lightboxIndex].url} 
               alt={filteredPhotos[lightboxIndex].caption}
               className="max-h-[70vh] w-auto rounded-xl shadow-2xl object-contain"

@@ -24,7 +24,7 @@ export default function About() {
             Gościnność i spokój w Karkonoszach
           </h2>
           <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
-            Pensjonat Syriusz położony jest na wysokości 760 m n.p.m. na uroczym, zalesionym Osiedlu Skalnym w Karpaczu. 
+            Pensjonat Grań położony jest na wysokości 760 m n.p.m. na uroczym, zalesionym centrum Karpacza w Karpaczu. 
             Naszym celem jest stworzenie domowej, kameralnej atmosfery, w której każdy gość – w tym czworonożni przyjaciele – poczuje się wyjątkowo.
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function About() {
               Wczasy z psem lub kotem bez dodatkowych opłat!
             </h3>
             <p className="text-stone-200 text-sm sm:text-base leading-relaxed">
-              Większość hoteli w Karpaczu pobiera od 40 do 100 zł za dobę pobytu zwierzęcia. W Pensjonacie Syriusz zapraszamy z czworonogami całkowicie za darmo. Teren wokół obiektu to las i szlaki idealne na wspólne spacery!
+              Większość hoteli w Karpaczu pobiera od 40 do 100 zł za dobę pobytu zwierzęcia. W Pensjonacie Grań zapraszamy z czworonogami całkowicie za darmo. Teren wokół obiektu to las i szlaki idealne na wspólne spacery!
             </p>
           </div>
           <div className="flex-shrink-0">

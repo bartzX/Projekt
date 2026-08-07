@@ -110,7 +110,7 @@ export default function ContactMap() {
             {/* Google Map preview */}
             <div className="bg-stone-100 rounded-3xl overflow-hidden border border-stone-200 shadow-sm h-64 relative">
               <iframe 
-                title="Mapa lokalizacji Pensjonat Syriusz Karpacz"
+                title="Mapa lokalizacji Pensjonat Grań Karpacz"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.3298!2d15.7756!3d50.7712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ecad000000001%3A0x0!2sReymonta%208%2C%2058-540%20Karpacz!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
                 className="w-full h-full border-0"
                 allowFullScreen="" 
@@ -241,7 +241,7 @@ export default function ContactMap() {
                   <div className="flex items-start gap-2 text-xs text-stone-500">
                     <input type="checkbox" required className="mt-0.5 rounded text-pine-700" />
                     <span>
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pensjonat Syriusz w celu obsługi zapytania rezerwacyjnego zgodnie z RODO i Polityką Prywatności.
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pensjonat Grań w celu obsługi zapytania rezerwacyjnego zgodnie z RODO i Polityką Prywatności.
                     </span>
                   </div>
 

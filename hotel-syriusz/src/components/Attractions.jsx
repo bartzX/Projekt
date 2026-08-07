@@ -15,7 +15,7 @@ export default function Attractions() {
             Co zwiedzić w Karpaczu?
           </h2>
           <p className="text-stone-600 text-base sm:text-lg">
-            Pensjonat Syriusz to wspaniała baza wypadowa w Karkonosze. Poznaj najciekawsze miejsca położone w promieniu zaledwie kilku minut spaceru lub jazdy samochodem.
+            Pensjonat Grań to wspaniała baza wypadowa w Karkonosze. Poznaj najciekawsze miejsca położone w promieniu zaledwie kilku minut spaceru lub jazdy samochodem.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export default function Attractions() {
               className="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all flex flex-col sm:flex-row group"
             >
               <div className="sm:w-2/5 relative h-48 sm:h-auto overflow-hidden">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src={item.image} 
                   alt={item.name} 
                   className="w-full h-full object-cover transform transition duration-500 group-hover:scale-105"

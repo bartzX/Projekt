@@ -28,7 +28,7 @@ export default function Rooms({ onOpenBooking }) {
             >
               {/* Room Photo */}
               <div className="relative h-64 overflow-hidden">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src={room.image} 
                   alt={room.name} 
                   className="w-full h-full object-cover transform transition duration-500 group-hover:scale-105"

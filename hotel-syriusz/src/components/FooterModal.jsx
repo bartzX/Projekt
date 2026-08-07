@@ -28,7 +28,7 @@ export default function FooterModal() {
                 <span className="font-serif text-2xl font-bold">{HOTEL_DATA.name}</span>
               </div>
               <p className="text-sm text-stone-400 leading-relaxed">
-                Przytulny pensjonat w sercu Karkonoszy na Osiedlu Skalnym. Oferujemy komfortowe noclegi z widokiem na góry, bezpłatnym pobytem dla zwierząt i rodzinną atmosferą.
+                Przytulny pensjonat w sercu Karkonoszy na centrum Karpacza. Oferujemy komfortowe noclegi z widokiem na góry, bezpłatnym pobytem dla zwierząt i rodzinną atmosferą.
               </p>
             </div>
 
@@ -107,7 +107,7 @@ export default function FooterModal() {
           {/* Bottom Bar */}
           <div className="border-t border-stone-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
             <div>
-              © {new Date().getFullYear()} Pensjonat Syriusz. Wszelkie prawa zastrzeżone.
+              © {new Date().getFullYear()} Pensjonat Grań. Wszelkie prawa zastrzeżone.
             </div>
             <div className="flex items-center gap-6">
               <span>Projekt i wdrożenie: Arena AI Agents & GitHub Superpowers</span>
@@ -172,7 +172,7 @@ export default function FooterModal() {
                 <div className="space-y-4 text-sm text-stone-600 leading-relaxed">
                   <p>
                     <strong>1. Administrator Danych Osobowych</strong><br />
-                    Administratorem Twoich danych osobowych jest Pensjonat Syriusz z siedzibą w Karpaczu przy ul. Reymonta 8, 58-540 Karpacz.
+                    Administratorem Twoich danych osobowych jest Pensjonat Grań z siedzibą w Karpaczu przy ul. Kolorowa 3, 58-540 Karpacz.
                   </p>
                   <p>
                     <strong>2. Cel przetwarzania danych</strong><br />
@@ -188,7 +188,7 @@ export default function FooterModal() {
               <div>
                 <div className="flex items-center gap-2 text-pine-800 mb-4">
                   <FileText className="w-6 h-6" />
-                  <h3 className="font-serif text-2xl font-bold">Regulamin Pobytu w Pensjonacie Syriusz</h3>
+                  <h3 className="font-serif text-2xl font-bold">Regulamin Pobytu w Pensjonacie Grań</h3>
                 </div>
                 <div className="space-y-4 text-sm text-stone-600 leading-relaxed">
                   <p>
