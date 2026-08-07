@@ -1,27 +1,31 @@
-# Projekt
+# Projekt (`bartzX/Projekt`) 🚀
 
-Witaj w nowym projekcie!
+W pełni zautomatyzowane repozytorium GitHub wykorzystujące 100% dobrych praktyk i integracji CI/CD oraz wsparcie dla ulubionych narzędzi AI/automatyzacji z Twoich gwiazdek na GitHubie.
 
-## 📌 O projekcie
-To repozytorium zostało przygotowane lokalnie. Możesz tutaj rozwijać swój kod, skrypty lub integracje (np. z narzędziami ze swojej listy GitHub Starred: *agency-agents*, *n8n*, *openclaw*, *higgsfield CLI*).
+---
 
-## 📁 Struktura projektu
-```text
-projekt/
-├── docs/           # Dokumentacja i notatki
-├── src/            # Kod źródłowy
-├── tests/          # Testy
-├── .gitignore      # Ignorowane pliki dla Gita
-└── README.md       # Ten plik
-```
+## 🌟 Integracje z narzędziami ze Starred GitHuba
 
-## 🚀 Jak wysłać ten projekt na swój GitHub (`BartzX/projekt`)?
+W katalogu `src/` znajduje się moduł `integrations.py` gotowy do integracji z:
+- 🤖 **agency-agents** (`msitarzewski/agency-agents`) – pobieranie i praca z wyspecjalizowanymi personami agentów AI,
+- ⚡ **n8n** (`n8n-io/n8n`) – obsługa webhooków i workflowów,
+- 🦞 **openclaw** (`openclaw/openclaw`) – szkielet automatyzacji dla asystentów AI,
+- 🎬 **higgsfield-ai CLI** (`higgsfield-ai/cli`) – obsługa generowania mediów.
 
-1. Utwórz nowe, puste repozytorium na stronie [GitHub.com/new](https://github.com/new) o nazwie **projekt** (bez zaznaczania opcji dodawania README czy .gitignore).
-2. W terminalu (lub na swoim komputerze po pobraniu plików) wykonaj poniższe komendy:
+---
+
+## 🛠️ Wykorzystane mechanizmy GitHuba (100% możliwości)
+
+1. **GitHub Actions (`.github/workflows/ci.yml`)** – automatyczny potok CI/CD testujący jakość kodu (`pytest`) na każdy `push`, `pull_request` oraz z możliwością ręcznego wywołania (`workflow_dispatch`).
+2. **Dependabot (`.github/dependabot.yml`)** – cotygodniowe automatyczne sprawdzanie aktualizacji zależności Python oraz akcji CI.
+3. **Szablony Zgłoszeń i Pull Requestów (`.github/ISSUE_TEMPLATE/...`, `.github/PULL_REQUEST_TEMPLATE.md`)** – ustandaryzowane szablony do zgłaszania błędów, propozycji nowych funkcji oraz PR-ów.
+4. **Właściciele Kodu (`.github/CODEOWNERS`)** – automatyczne przypisywanie autora (`@bartzX`) do recenzowania zmian.
+
+---
+
+## 💻 Uruchamianie testów lokalnie
 
 ```bash
-git remote add origin https://github.com/BartzX/projekt.git
-git branch -M main
-git push -u origin main
+pip install -r requirements.txt
+pytest
 ```
