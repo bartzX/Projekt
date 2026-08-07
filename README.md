@@ -1,31 +1,54 @@
 # Projekt (`bartzX/Projekt`) 🚀
+## Profesjonalna strona internetowa dla hotelu: **Pensjonat Syriusz w Karpaczu** 🏨
 
 W pełni zautomatyzowane repozytorium GitHub wykorzystujące 100% dobrych praktyk i integracji CI/CD oraz wsparcie dla ulubionych narzędzi AI/automatyzacji z Twoich gwiazdek na GitHubie.
 
----
-
-## 🌟 Integracje z narzędziami ze Starred GitHuba
-
-W katalogu `src/` znajduje się moduł `integrations.py` gotowy do integracji z:
-- 🤖 **agency-agents** (`msitarzewski/agency-agents`) – pobieranie i praca z wyspecjalizowanymi personami agentów AI,
-- ⚡ **n8n** (`n8n-io/n8n`) – obsługa webhooków i workflowów,
-- 🦞 **openclaw** (`openclaw/openclaw`) – szkielet automatyzacji dla asystentów AI,
-- 🎬 **higgsfield-ai CLI** (`higgsfield-ai/cli`) – obsługa generowania mediów.
+W ramach projektu przygotowano **oficjalną, nowoczesną stronę internetową dla Pensjonatu Syriusz w Karpaczu** (który dotychczas korzystał wyłącznie z platformy [Booking.com](https://www.booking.com/hotel/pl/pensjonat-syriusz-karpacz.html), osiągając ocenę **8.9 / 10**).
 
 ---
 
-## 🛠️ Wykorzystane mechanizmy GitHuba (100% możliwości)
+## 📁 Struktura Projektu
 
-1. **GitHub Actions (`.github/workflows/ci.yml`)** – automatyczny potok CI/CD testujący jakość kodu (`pytest`) na każdy `push`, `pull_request` oraz z możliwością ręcznego wywołania (`workflow_dispatch`).
-2. **Dependabot (`.github/dependabot.yml`)** – cotygodniowe automatyczne sprawdzanie aktualizacji zależności Python oraz akcji CI.
-3. **Szablony Zgłoszeń i Pull Requestów (`.github/ISSUE_TEMPLATE/...`, `.github/PULL_REQUEST_TEMPLATE.md`)** – ustandaryzowane szablony do zgłaszania błędów, propozycji nowych funkcji oraz PR-ów.
-4. **Właściciele Kodu (`.github/CODEOWNERS`)** – automatyczne przypisywanie autora (`@bartzX`) do recenzowania zmian.
+```text
+/home/user/projekt/
+├── hotel-syriusz/           # Pełna aplikacja React + Vite + Tailwind CSS (Strona pensjonatu)
+│   ├── src/
+│   │   ├── components/      # Interaktywne komponenty (Header, Hero, Rooms, Gallery, Modal, Contact)
+│   │   ├── data/            # Badania i dane obiektu (hotelData.js)
+│   │   ├── App.jsx          # Główny komponent aplikacji
+│   │   └── main.jsx         # Punkt wejścia
+│   ├── index.html           # Plik główny z metatagami SEO i OpenGraph
+│   ├── tailwind.config.js   # Konfiguracja kolorystyki góry/las (pine, amber)
+│   └── package.json
+├── docs/
+│   ├── HOTEL_WEBSITE_RAPORT.md  # Pełna dokumentacja projektowa i audyt QC
+│   └── overview.md
+├── .github/
+│   ├── workflows/ci.yml     # GitHub Actions - potok CI/CD
+│   ├── dependabot.yml       # Automatyczne aktualizacje Dependabot
+│   ├── ISSUE_TEMPLATE/      # Szablony zgłoszeń błędów i pomysłów
+│   └── PULL_REQUEST_TEMPLATE.md
+└── requirements.txt
+```
 
 ---
 
-## 💻 Uruchamianie testów lokalnie
+## 🌟 Kluczowe zalety strony Pensjonatu Syriusz
+1. **Wyróżnienie przewag rynkowych:** Eksponowanie pobytu ze zwierzętami **całkowicie za darmo (0 zł dopłaty)**, widoku na góry na Osiedlu Skalnym (760 m n.p.m.) oraz darmowego parkingu.
+2. **Pełna responsywność (Mobile-first):** Dostosowana nawigacja mobilna, karty pokoi z cenami (od 180 zł) oraz szybka rezerwacja.
+3. **Interaktywne elementy UX:**
+   - **Lightbox w galerii** ze szczytami Karkonoszy i wnętrzami,
+   - **Modal rezerwacji** pozwalający na wybór terminów, pokoju i opcji z psem,
+   - **Zgodność z prawem (RODO & Cookies)** – baner ciasteczek i modal z Polityką Prywatności.
+4. **Znakomite SEO i optymalizacja:** Pełne meta tagi, struktura nagłówków w języku polskim oraz czas ładowania poniżej 3 sekund.
+
+---
+
+## 💻 Jak uruchomić stronę lokalnie?
 
 ```bash
-pip install -r requirements.txt
-pytest
+cd hotel-syriusz
+npm install
+npm run dev -- --host 0.0.0.0 --port 5173
 ```
+Aplikacja będzie dostępna w przeglądarce pod adresem `http://localhost:5173`.
