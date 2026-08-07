@@ -4,6 +4,7 @@ Moduł integracji z polubionymi narzędziami na GitHubie:
 - n8n (n8n-io/n8n)
 - openclaw (openclaw/openclaw)
 - higgsfield-ai CLI (higgsfield-ai/cli)
+- dzhng/deep-research & open_deep_research
 """
 import requests
 import json
@@ -47,3 +48,9 @@ class HiggsfieldHelper:
     @staticmethod
     def info():
         return "Higgsfield CLI - narzędzie do generowania i obróbki mediów AI z poziomu terminala."
+
+class DeepResearchHelper:
+    """Struktura dla integracji z narzędziami Deep Research (dzhng/deep-research, Alibaba-NLP/DeepResearch)."""
+    @staticmethod
+    def info():
+        return "Deep Research - agent do iteracyjnego pogłębionego wyszukiwania informacji i syntezy wiedzy."
