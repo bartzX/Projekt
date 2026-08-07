@@ -21,7 +21,7 @@ export default function Hero({ onOpenBooking }) {
       {/* Background Image with Richer Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80" 
+          src="./images/hero_mountain.jpg" 
           alt="Pensjonat Syriusz w Karpaczu - widok na Karkonosze" 
           className="w-full h-full object-cover object-center transform scale-105 animate-pulse-slow"
         />

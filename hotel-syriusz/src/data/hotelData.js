@@ -53,7 +53,7 @@ export const HOTEL_DATA = {
       size: "18 m²",
       price: "180",
       description: "Przytulny pokój dla par lub przyjaciół z wyjściem na słoneczny balkon z widokiem na las i szczyty Karkonoszy.",
-      image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80",
+      image: "./images/room_double.jpg",
       amenities: [
         "Prywatna łazienka z prysznicem",
         "Balkon z widokiem na góry",
@@ -70,7 +70,7 @@ export const HOTEL_DATA = {
       size: "24 m²",
       price: "250",
       description: "Przestronny pokój dla rodziny z dzieckiem z wygodną strefą wypoczynkową i dużym oknem panoramicznym.",
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+      image: "./images/room_comfort.jpg",
       amenities: [
         "Prywatna łazienka z prysznicem",
         "1 łóżko podwójne + 1 pojedyncze",
@@ -87,7 +87,7 @@ export const HOTEL_DATA = {
       size: "35 m²",
       price: "340",
       description: "Idealne rozwiązanie dla rodzin z dziećmi lub grupy znajomych. Dwa oddzielne pokoje z prywatną łazienką i korytarzem.",
-      image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80",
+      image: "./images/room_studio.jpg",
       amenities: [
         "2 oddzielne sypialnie",
         "Prywatna łazienka rodzinna",
@@ -101,50 +101,50 @@ export const HOTEL_DATA = {
   gallery: [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/hero_mountain.jpg",
       caption: "Pensjonat Syriusz - Klimatyczna fasada i otoczenie lasu",
       category: "Otoczenie"
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/room_double.jpg",
       caption: "Pokój Dwuosobowy z wygodnym łożem małżeńskim",
       category: "Pokoje"
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/dining_fireplace.jpg",
       caption: "Nasza przytulna jadalnia z kominkiem na wieczorne obiadokolacje",
       category: "Jadalnia"
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/room_comfort.jpg",
       caption: "Jasne wnętrze Pokoju Comfort z elementami drewna",
       category: "Pokoje"
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/garden_view.jpg",
       caption: "Taras słoneczny i ogród z miejscem na grilla",
       category: "Otoczenie"
     },
     {
       id: 6,
-      url: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/room_studio.jpg",
       caption: "Studio Rodzinne - przestrzeń dla całych rodzin",
       category: "Pokoje"
     },
     {
       id: 7,
-      url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      url: "./images/hero_mountain.jpg",
       caption: "Widok na szczyty Karkonoszy podczas górskich spacerów",
       category: "Otoczenie"
     },
     {
       id: 8,
-      url: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
-      caption: "Zimowy pejzaż Karpacza – raj dla narciarzy i spacerowiczów",
+      url: "./images/garden_view.jpg",
+      caption: "Słoneczny ogród wypoczynkowy w sercu natury",
       category: "Otoczenie"
     }
   ],
@@ -154,28 +154,28 @@ export const HOTEL_DATA = {
       distance: "3.7 km",
       time: "8 min autem / 40 min spacerem",
       desc: "Słynny zabytkowy norweski kościół klepkowy z XII wieku – symbol Karpacza i punkt startowy na Śnieżkę.",
-      image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+      image: "./images/hero_mountain.jpg"
     },
     {
       name: "Miasteczko Western City",
       distance: "2.5 km",
       time: "6 min autem / 25 min spacerem",
       desc: "Park rozrywki w klimacie Dzikiego Zachodu w Ścięgnach koło Karpacza – pokazy kowbojów i jazda konna.",
-      image: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=600&q=80"
+      image: "./images/garden_view.jpg"
     },
     {
       name: "Krucze Skały & Szlaki Górskie",
       distance: "1.5 km",
       time: "15 min spacerem",
       desc: "Malownicza grupa skalna nad potokiem Płomnica. Doskonałe miejsce na spacer i wspinaczkę.",
-      image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+      image: "./images/hero_mountain.jpg"
     },
     {
       name: "Wyciągi Narciarskie & Kopa",
       distance: "800 m",
       time: "10 min spacerem",
       desc: "Zimą raj dla narciarzy i snowboardzistów. Najbliższe orczyki i stacje znajdują się zaledwie 10 minut piechotą.",
-      image: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=600&q=80"
+      image: "./images/hero_mountain.jpg"
     }
   ],
   reviews: [
