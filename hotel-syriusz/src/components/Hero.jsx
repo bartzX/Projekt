@@ -17,7 +17,7 @@ export default function Hero({ onOpenBooking }) {
   };
 
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center pt-24 pb-12 sm:pb-16 overflow-hidden">
+    <section className="relative min-h-[95vh] flex items-center justify-center pt-32 pb-16 overflow-hidden">
       {/* Background Image with Richer Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -25,13 +25,13 @@ export default function Hero({ onOpenBooking }) {
           alt="Pensjonat Syriusz w Karpaczu - widok na Karkonosze" 
           className="w-full h-full object-cover object-center transform scale-105 animate-pulse-slow"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/45 to-stone-900/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/45 to-stone-900/95" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white my-auto w-full flex flex-col items-center justify-center">
-        {/* Trust & Location Badges Bar - Idealnie wyśrodkowane, równa wysokość */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-5 max-w-3xl">
+        {/* Trust & Location Badges Bar - Zwiększony odstęp górny pt-32 by nie chować pod menu */}
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6 max-w-3xl">
           <div className="flex items-center justify-center gap-1.5 bg-amber-500 text-stone-950 font-extrabold px-3.5 h-8 rounded-full text-xs sm:text-sm shadow-lg">
             <Star className="w-3.5 h-3.5 fill-current" />
             <span>Booking.com: {HOTEL_DATA.bookingScore}/10 ({HOTEL_DATA.bookingReviewsCount} opinii)</span>
@@ -56,7 +56,7 @@ export default function Hero({ onOpenBooking }) {
           Wypocznij w sercu Karpacza na ciszy zalesionego Osiedla Skalnego. Ciesz się widokiem na Śnieżkę, domową kuchnią z kominkiem i pobytem z psem za darmo.
         </p>
 
-        {/* ZMODYFIKOWANA CZĘŚĆ REZERWACYJNA - Perfekcyjny ryczałt wysokości (h-12 na każdy input i przycisk) */}
+        {/* ZMODYFIKOWANA CZĘŚĆ REZERWACYJNA - Perfekcyjna symetria (h-12 na każdy element, gap-3/4 i czytelne obramowanie) */}
         <div className="max-w-4xl mx-auto w-full">
           <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl p-5 sm:p-6 border border-white/60 text-stone-800 transition-all">
             <form onSubmit={handleSearch} className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 items-end">
@@ -67,12 +67,14 @@ export default function Hero({ onOpenBooking }) {
                   <Calendar className="w-3.5 h-3.5 text-pine-700" />
                   <span>Zameldowanie</span>
                 </label>
-                <input 
-                  type="date"
-                  value={checkIn}
-                  onChange={(e) => setCheckIn(e.target.value)}
-                  className="w-full h-11 bg-stone-50/90 border border-stone-200 rounded-xl px-3 text-xs sm:text-sm font-semibold text-stone-800 focus:outline-none focus:ring-2 focus:ring-pine-600 focus:bg-white transition-all shadow-inner"
-                />
+                <div className="relative w-full">
+                  <input 
+                    type="date"
+                    value={checkIn}
+                    onChange={(e) => setCheckIn(e.target.value)}
+                    className="w-full h-12 bg-stone-50 border-2 border-stone-200/90 rounded-xl px-3 text-xs sm:text-sm font-semibold text-stone-800 focus:outline-none focus:border-pine-600 transition-all shadow-sm block appearance-none"
+                  />
+                </div>
               </div>
 
               {/* Kolumna 2: Wymeldowanie */}
@@ -81,12 +83,14 @@ export default function Hero({ onOpenBooking }) {
                   <Calendar className="w-3.5 h-3.5 text-pine-700" />
                   <span>Wymeldowanie</span>
                 </label>
-                <input 
-                  type="date"
-                  value={checkOut}
-                  onChange={(e) => setCheckOut(e.target.value)}
-                  className="w-full h-11 bg-stone-50/90 border border-stone-200 rounded-xl px-3 text-xs sm:text-sm font-semibold text-stone-800 focus:outline-none focus:ring-2 focus:ring-pine-600 focus:bg-white transition-all shadow-inner"
-                />
+                <div className="relative w-full">
+                  <input 
+                    type="date"
+                    value={checkOut}
+                    onChange={(e) => setCheckOut(e.target.value)}
+                    className="w-full h-12 bg-stone-50 border-2 border-stone-200/90 rounded-xl px-3 text-xs sm:text-sm font-semibold text-stone-800 focus:outline-none focus:border-pine-600 transition-all shadow-sm block appearance-none"
+                  />
+                </div>
               </div>
 
               {/* Kolumna 3: Liczba Gości */}
@@ -95,23 +99,25 @@ export default function Hero({ onOpenBooking }) {
                   <Users className="w-3.5 h-3.5 text-pine-700" />
                   <span>Goście</span>
                 </label>
-                <select 
-                  value={guests}
-                  onChange={(e) => setGuests(e.target.value)}
-                  className="w-full h-11 bg-stone-50/90 border border-stone-200 rounded-xl px-3 text-xs sm:text-sm font-semibold text-stone-800 focus:outline-none focus:ring-2 focus:ring-pine-600 focus:bg-white transition-all shadow-inner"
-                >
-                  <option value="1">1 Osoba</option>
-                  <option value="2">2 Osoby (Para)</option>
-                  <option value="3">3 Osoby</option>
-                  <option value="4">4 Osoby (Rodzina)</option>
-                </select>
+                <div className="relative w-full">
+                  <select 
+                    value={guests}
+                    onChange={(e) => setGuests(e.target.value)}
+                    className="w-full h-12 bg-stone-50 border-2 border-stone-200/90 rounded-xl px-3 text-xs sm:text-sm font-semibold text-stone-800 focus:outline-none focus:border-pine-600 transition-all shadow-sm block"
+                  >
+                    <option value="1">1 Osoba</option>
+                    <option value="2">2 Osoby (Para)</option>
+                    <option value="3">3 Osoby</option>
+                    <option value="4">4 Osoby (Rodzina)</option>
+                  </select>
+                </div>
               </div>
 
               {/* Kolumna 4: Przycisk CTA */}
-              <div>
+              <div className="w-full">
                 <button 
                   type="submit"
-                  className="w-full h-11 bg-gradient-to-r from-pine-700 to-pine-800 hover:from-pine-800 hover:to-pine-900 text-white font-bold px-4 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 transform active:scale-95 group text-xs sm:text-sm"
+                  className="w-full h-12 bg-gradient-to-r from-pine-700 to-pine-800 hover:from-pine-800 hover:to-pine-900 text-white font-bold px-4 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 transform active:scale-95 group text-xs sm:text-sm"
                 >
                   <span>Sprawdź termin</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
