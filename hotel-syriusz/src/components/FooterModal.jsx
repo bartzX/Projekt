@@ -28,7 +28,7 @@ export default function FooterModal() {
                 <span className="font-serif text-2xl font-bold">{HOTEL_DATA.name}</span>
               </div>
               <p className="text-sm text-stone-400 leading-relaxed">
-                Przytulny pensjonat w sercu Karkonoszy na centrum Karpacza. Oferujemy komfortowe noclegi z widokiem na góry, bezpłatnym pobytem dla zwierząt i rodzinną atmosferą.
+                Przytulny pensjonat w sercu Karkonoszy na centrum Karpacza. Oferujemy komfortowe noclegi z widokiem na góry, domowymi śniadaniami i rodzinną atmosferą.
               </p>
             </div>
 
@@ -196,8 +196,8 @@ export default function FooterModal() {
                     Doba hotelowa rozpoczyna się o godzinie 14:00 (lub 13:00 po uzgodnieniu) i trwa do godziny 11:00 w dniu wyjazdu.
                   </p>
                   <p>
-                    <strong>2. Zasady pobytu ze zwierzętami (0 zł)</strong><br />
-                    Akceptujemy zwierzęta domowe bez dodatkowych opłat. Właściciele odpowiadają za zachowanie czworonoga oraz sprzątanie po nim na terenie ogrodu.
+                    <strong>2. Wyżywienie w formie bufetu</strong><br />
+                    Codzienne śniadania w formie szwedzkiego stołu serwujemy na naszej sali kominkowej w godzinach porannych.
                   </p>
                   <p>
                     <strong>3. Cisza nocna</strong><br />

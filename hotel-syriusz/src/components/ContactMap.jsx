@@ -46,7 +46,7 @@ export default function ContactMap() {
             Napisz do nas lub zadzwoń
           </h2>
           <p className="text-stone-600 text-base sm:text-lg">
-            Chętnie odpowiemy na wszystkie pytania dotyczące dostępności pokoi, wyżywienia, pobytu z psem czy dojazdu.
+            Chętnie odpowiemy na wszystkie pytania dotyczące dostępności pokoi, wyżywienia, wyżywienia czy dojazdu.
           </p>
         </div>
 
@@ -101,8 +101,8 @@ export default function ContactMap() {
                   <span>Check-in: 14:00-21:00<br/>Check-out: do 11:00</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Dog className="w-4 h-4 text-pine-700" />
-                  <span>Zwierzęta w cenie 0 zł<br/>Parking darmowy</span>
+                  <Clock className="w-4 h-4 text-pine-700" />
+                  <span>Śniadania w bufecie<br/>Parking darmowy</span>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function ContactMap() {
                       name="dates"
                       value={formData.dates}
                       onChange={handleChange}
-                      placeholder="np. 15-20 września 2026, dwoje dorosłych + pies"
+                      placeholder="np. 15-20 września 2026, dwoje dorosłych, pokój z widokiem"
                       className="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-pine-500"
                     />
                   </div>
@@ -233,7 +233,7 @@ export default function ContactMap() {
                       rows="4"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Napisz, czy potrzebujesz śniadań, wyżywienia, czy przyjedziesz ze zwierzęciem..."
+                      placeholder="Napisz, czy potrzebujesz śniadań, wyżywienia, czy preferujesz balkon..."
                       className="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-pine-500"
                     />
                   </div>

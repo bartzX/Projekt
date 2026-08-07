@@ -94,7 +94,7 @@ export default function Rooms({ onOpenBooking }) {
 
         {/* Included features note */}
         <div className="mt-12 text-center text-sm text-stone-500">
-          * W cenie pobytu: darmowy parking, szybkie Wi-Fi, opłata za zwierzęta domowe (0 zł) oraz nieograniczony dostęp do ogrodu z tarasem.
+          * W cenie pobytu: darmowy parking, szybkie Wi-Fi oraz nieograniczony dostęp do ogrodu z tarasem.
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export const HOTEL_DATA = {
   stats: [
     { label: "Lokalizacja na Booking", value: "9.3 / 10", desc: "Samo centrum Karpacza" },
     { label: "Do stoku Kolorowa", value: "100 m", desc: "Wyciągi i tor Pohulanka" },
-    { label: "Zwierzęta domowe", value: "0 zł", desc: "Pobyt z psem/kotem gratis" },
+    { label: "Do stoku Kolorowa", value: "100 m", desc: "Wyciągi i tor Pohulanka" },
     { label: "Śniadania i obiadokolacje", value: "Bufet", desc: "Szwedzki stół w cenie" }
   ],
   benefits: [
@@ -22,12 +22,12 @@ export const HOTEL_DATA = {
     {
       title: "Centrum Karpacza (Lokalizacja 9.3/10)",
       description: "Wszędzie blisko pieszo – szlaki turystyczne, restauracje, kawiarnie i główne atrakcje Karpacza na wyciągnięcie ręki.",
-      icon: "Dog"
+      icon: "Home"
     },
     {
-      title: "Przyjazny zwierzętom (0 zł)",
-      description: "Twój pies lub kot przebywa w naszym pensjonacie bez dodatkowych opłat. Kochamy czworonogi!",
-      icon: "Car"
+      title: "Stok Kolorowa i Tor Pohulanka",
+      description: "Zaledwie 100 metrów do stoku narciarskiego oraz całorocznego toru saneczkowego.",
+      icon: "Sun"
     },
     {
       title: "Szwedzki bufet i obiadokolacje",
@@ -60,7 +60,7 @@ export const HOTEL_DATA = {
         "Szybkie Wi-Fi & TV-SAT",
         "Czajnik elektryczny",
         "100m do stoku narciarskiego",
-        "Zwierzęta bez opłat"
+        "Śniadanie w formie bufetu"
       ]
     },
     {
@@ -77,7 +77,7 @@ export const HOTEL_DATA = {
         "Szybkie Wi-Fi & TV-SAT",
         "Stolik kawowy z fotelami",
         "Czajnik i zestaw herbat",
-        "Zwierzęta bez opłat"
+        "Śniadanie w formie bufetu"
       ]
     },
     {
@@ -94,7 +94,7 @@ export const HOTEL_DATA = {
         "Szybkie Wi-Fi & 2x TV-SAT",
         "Bezpośredni widok na góry",
         "Wyjście na słoneczny taras",
-        "Zwierzęta bez opłat"
+        "Śniadanie w formie bufetu"
       ]
     }
   ],
@@ -204,7 +204,7 @@ export const HOTEL_DATA = {
   policies: {
     checkIn: "od 14:00 do 21:00",
     checkOut: "do 11:00",
-    pets: "Akceptujemy zwierzęta domowe (psy i koty) całkowicie BEZPŁATNIE.",
+    pets: "Wszystkie pokoje wyposażone w łazienkę i bezprzewodowy internet.",
     parking: "Bezpłatne miejsca na ul. Kolorowej LUB prywatny zamykany parking w odległości 20 m (15 zł/dobę).",
     breakfast: "Śniadania w formie szwedzkiego bufetu oraz obiadokolacje w cenie pobytu."
   }

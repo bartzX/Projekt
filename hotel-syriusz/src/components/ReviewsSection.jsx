@@ -15,7 +15,7 @@ export default function ReviewsSection() {
             Zaufanie naszych Gości
           </h2>
           <p className="text-stone-300 text-base sm:text-lg">
-            Szeroki uśmiech, domowa atmosfera i pobyt z psami bez dopłat sprawiają, że wracacie do nas co roku.
+            Szeroki uśmiech, domowa atmosfera i bliskość stoku Kolorowa sprawiają, że wracacie do nas co roku.
           </p>
         </div>
 

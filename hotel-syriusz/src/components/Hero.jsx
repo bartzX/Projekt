@@ -38,7 +38,7 @@ export default function Hero({ onOpenBooking }) {
           </div>
           <div className="flex items-center justify-center gap-1.5 bg-pine-700/95 border border-pine-500/50 text-white font-semibold px-3.5 h-8 rounded-full text-xs sm:text-sm shadow-lg backdrop-blur-md">
             <Heart className="w-3.5 h-3.5 text-rose-300 fill-current" />
-            <span>Przyjazny zwierzętom (0 zł)</span>
+            <span>100 m do stoku Kolorowa</span>
           </div>
           <div className="hidden xs:flex items-center justify-center gap-1.5 bg-white/15 border border-white/20 backdrop-blur-md text-stone-100 font-medium px-3.5 h-8 rounded-full text-xs sm:text-sm shadow-lg">
             <MapPin className="w-3.5 h-3.5 text-amber-400" />
@@ -53,7 +53,7 @@ export default function Hero({ onOpenBooking }) {
 
         {/* Description */}
         <p className="text-sm sm:text-lg md:text-xl text-stone-200 max-w-2xl mx-auto mb-8 sm:mb-10 font-normal leading-relaxed drop-shadow">
-          Wypocznij w sercu Karpacza na ciszy zalesionego Osiedla Skalnego. Ciesz się widokiem na Śnieżkę, domową kuchnią z kominkiem i pobytem z psem za darmo.
+          Wypocznij w sercu Karpacza na ciszy zalesionego Osiedla Skalnego. Ciesz się widokiem na Śnieżkę, domową kuchnią z kominkiem i wyżywieniem w formie bufetu.
         </p>
 
         {/* ZMODYFIKOWANA CZĘŚĆ REZERWACYJNA - Perfekcyjna symetria (h-12 na każdy element, gap-3/4 i czytelne obramowanie) */}
@@ -133,7 +133,7 @@ export default function Hero({ onOpenBooking }) {
               </span>
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                <span>Zwierzęta w cenie (0 zł dopłaty)</span>
+                <span>Śniadania w formie bufetu w cenie</span>
               </span>
               <span className="hidden xs:flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-pine-600 flex-shrink-0" />

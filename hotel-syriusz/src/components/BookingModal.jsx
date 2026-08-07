@@ -47,7 +47,7 @@ export default function BookingModal({ initialData, onClose }) {
             <div className="bg-stone-50 p-4 rounded-xl text-left text-xs space-y-2 border border-stone-200 mb-6">
               <div><strong>Wybrany pokój:</strong> {selectedRoomObj.name}</div>
               <div><strong>Liczba gości:</strong> {guests} os.</div>
-              <div><strong>Pobyt ze zwierzęciem:</strong> {pets ? 'Tak (0 zł dopłaty)' : 'Nie'}</div>
+              
               <div><strong>Termin:</strong> {checkIn || 'Do ustalenia'} – {checkOut || 'Do ustalenia'}</div>
             </div>
             <button 
@@ -64,7 +64,7 @@ export default function BookingModal({ initialData, onClose }) {
               <h3 className="font-serif text-2xl font-bold">Zarezerwuj pobyt</h3>
             </div>
             <p className="text-stone-500 text-xs mb-6">
-              Gwarantujemy najniższą cenę przy rezerwacji bezpośredniej i brak opłat za zwierzęta.
+              Gwarantujemy najniższą cenę przy rezerwacji bezpośredniej i bliskość stoku.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -138,8 +138,8 @@ export default function BookingModal({ initialData, onClose }) {
                       className="rounded text-pine-700 w-4 h-4"
                     />
                     <span className="flex items-center gap-1">
-                      <Dog className="w-4 h-4 text-pine-700" />
-                      Zwierzę (0 zł)
+                      <CheckCircle className="w-4 h-4 text-pine-700" />
+                      Bufet w cenie
                     </span>
                   </label>
                 </div>
@@ -153,7 +153,7 @@ export default function BookingModal({ initialData, onClose }) {
                 </div>
                 <div className="text-right text-xs text-pine-800 font-semibold">
                   <span>W cenie: Wi-Fi, Parking</span><br/>
-                  <span>i pobyt z psem/kotem gratis</span>
+                  <span>i widok na Karkonosze</span>
                 </div>
               </div>
 

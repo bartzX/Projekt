@@ -4,7 +4,7 @@ import { HOTEL_DATA } from '../data/hotelData';
 
 export default function About() {
   const iconMap = {
-    Dog: Dog,
+    MapPin: Home,
     Mountain: Home,
     Car: Car,
     Coffee: Coffee,
@@ -25,7 +25,7 @@ export default function About() {
           </h2>
           <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
             Pensjonat Grań położony jest na wysokości 760 m n.p.m. na uroczym, zalesionym centrum Karpacza w Karpaczu. 
-            Naszym celem jest stworzenie domowej, kameralnej atmosfery, w której każdy gość – w tym czworonożni przyjaciele – poczuje się wyjątkowo.
+            Naszym celem jest stworzenie domowej, kameralnej atmosfery, w której każdy gość poczuje się wyjątkowo i wypocznie w otoczeniu Karkonoszy.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function About() {
           })}
         </div>
 
-        {/* Highlight callout for Pets 0 zł */}
+        {/* Highlight callout for Location 9.3/10 */}
         <div className="mt-16 bg-gradient-to-r from-pine-900 to-pine-800 text-white rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="max-w-2xl text-left">
             <div className="inline-flex items-center gap-2 bg-amber-500 text-stone-950 font-bold px-3 py-1 rounded-full text-xs mb-4">
@@ -82,10 +82,10 @@ export default function About() {
               Wyróżnik na tle innych hoteli
             </div>
             <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3">
-              Wczasy z psem lub kotem bez dodatkowych opłat!
+              Noclegi tuż przy stoku Kolorowa!
             </h3>
             <p className="text-stone-200 text-sm sm:text-base leading-relaxed">
-              Większość hoteli w Karpaczu pobiera od 40 do 100 zł za dobę pobytu zwierzęcia. W Pensjonacie Grań zapraszamy z czworonogami całkowicie za darmo. Teren wokół obiektu to las i szlaki idealne na wspólne spacery!
+              Pensjonat Grań usytuowany jest na wzniesieniu w samym centrum Karpacza, zaledwie 100 metrów od wyciągów narciarskich i letniej zjeżdżalni na stoku Pohulanka. Ciesz się widokiem na góry i bliskością wszystkich atrakcji!
             </p>
           </div>
           <div className="flex-shrink-0">
